@@ -1,0 +1,22 @@
+.header {
+  @include responsiveMargins;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include rowDisplay;
+
+  background: $black;
+  color: white;
+}
+
+.header__title {
+  margin-right: 25px;
+}
+
+.header__menu {
+  @include rowDisplay;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
